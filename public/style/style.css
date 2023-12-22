@@ -104,6 +104,10 @@ div #weatherData{
     text-transform: capitalize;
 }
 
+#weatherConditions #description{
+    margin-top: 20px;
+}
+
 #weatherData #additionalInformation{
     display: flex;
     flex-direction: column;
@@ -122,12 +126,17 @@ div #weatherData{
 
 #additionalInformation #degree{
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 30px;
     align-items: center;
     font-size: 26px;
     height: 250px;
     color: #ff0000;
+}
+
+#degree div{
+    font-size: 2em;
+    width: auto;
 }
 
 #additionalInformation p{
