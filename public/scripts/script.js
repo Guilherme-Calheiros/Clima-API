@@ -20,7 +20,7 @@ const toggleLoader = () => {
 
 function data() {
     let value = input.value
-    fetch(`/weather?city=${value}`).then(response =>{
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${value}&units=metric&appid=a701f5d270589f3e847f26c89771006f&lang=pt_br`).then(response =>{
         response.json().then(json => {
             if(json.error) {
                 return errorMessageContainer.classList.remove("hide"), weatherData.classList.add('hide')
